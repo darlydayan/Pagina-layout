@@ -1,0 +1,84 @@
+header {
+background-color: var(--main-color);
+color: var(--second-color);
+position: fixed;
+min-width: 500px;
+position: sticky;      
+width: 100%;
+top: 0;
+padding: 0 35px;
+}
+  
+  
+nav {
+height: var(--nav-heigt);
+}
+
+
+.nav__logo {
+}
+
+.nav__figure {
+
+}
+
+.nav__togle {
+/* display: none; */
+height: 60px;
+width: 60px;
+background-size: cover;
+background-image: var(--icon-toggle-menu);
+cursor: pointer;
+transition: all 0.7s;
+}
+
+.nav__input {
+  display: none;
+}
+
+.nav__list {
+display: flex;
+flex-direction: column;
+list-style-type: none;
+inset: 0;
+text-align: center;
+align-items: center;
+position: fixed;
+justify-content: center;
+background-color: var(--main-color);
+transition: all 0.7s;
+transform: var(--transform-menu-show);
+top: var(--nav-heigt);
+gap: 2rem;
+}
+
+.nav__item {
+}
+
+.nav__link {
+text-decoration: none;
+color: var(--second-color);
+font-weight: 700;
+font-size: 1rem;
+}
+
+.nav__contenedor {
+  display: flex;
+  align-items: center;
+  height: 70px;
+  justify-content: space-between;
+  --transform-menu-show: translate(-100%);
+  --icon-toggle-menu: url(../assets/icons/menu.svg);
+}
+
+.nav__contenedor:has(.nav__input:checked) {
+  --transform-menu-show: translate(0);
+  --icon-toggle-menu: url(../assets/icons/close.svg);
+}
+
+.enlace {
+  text-decoration: none;
+  color: inherit;
+  font-weight: 700;
+  margin-right: 20px;
+}

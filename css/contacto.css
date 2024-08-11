@@ -1,0 +1,22 @@
+.contacto {
+    display: flex;
+    width: 400px;
+    margin: 0px auto;
+    padding: 20px;
+    flex-direction: column;
+    gap: 8PX;
+  }
+  
+  .form-group {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .input {
+    width: 100%;
+    padding: 10px;
+    font-size: var(--font-size);
+    border-radius: 15px;
+    outline: none;
+    margin-bottom: 20px;
+  }
